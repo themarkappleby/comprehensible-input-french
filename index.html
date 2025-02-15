@@ -10,26 +10,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body style="margin: 0; padding: 0;">
-    <script type="text/javascript">
-        const ids = [
-            "E4h-8rw2GlY",
-            "uwXNgPsfvus",
-            "ITDJrHl3_yU",
-            "V2vExsNHadI",
-            "HSeSpePixTs",
-        ]
-        ids.forEach(id => {
-            const div = document.createElement("div")
-            div.classList.add("video")
-            const iframe = document.createElement("iframe")
-            iframe.src = `https://www.youtube.com/embed/${id}`
-            iframe.allowFullscreen = true
-            iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            iframe.referrerpolicy = "strict-origin-when-cross-origin"
-            div.appendChild(iframe)
-            document.body.appendChild(div)
-        })
-
-    </script>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=playlist&list=PLXweyiR2fMMfnz5m-55Y4JsPHhrYg2M3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
