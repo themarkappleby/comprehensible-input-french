@@ -7,11 +7,16 @@
     <title>My Progressive Web App</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#B12A34">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: 0;
+            background: grey;
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0;">
-    <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=playlist&list=PLXweyiR2fMMfnz5m-55Y4JsPHhrYg2M3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=playlist&list=PLXweyiR2fMMfnz5m-55Y4JsPHhrYg2M3c&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 </html>
